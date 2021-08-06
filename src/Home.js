@@ -17,22 +17,22 @@ function Home() {
                 <img src={Home_Image} alt="logo" className="home_image" />
 
                 <div className="home_row">
-                    <Product id={11} title="Apple Tv" price={1499.99} image={P7} rating={5} />
+                    <Product id={11} title="2021 Apple TV 4K (64GB)" price={199.99} image={P7} rating={5} />
                 </div>
 
                 <div className="home_row">
-                    <Product id={12} title="Apple iPad Pro" price={1299.99} image={P6} rating={5} />
-                    <Product id={13} title="Apple iWatch series 6" price={499.99} image={P2} rating={5} />
+                    <Product id={12} title="2021 Apple 12.9-inch iPad Pro (Wi-Fi, 256GB - Silver" price={1299.99} image={P6} rating={5} />
+                    <Product id={13} title="New Apple Watch Series 6 (GPS, 40mm) - Space Gray Aluminum Case with Black Sport Band" price={349.99} image={P2} rating={5} />
                 </div>
 
                 <div className="home_row">
-                    <Product id={14} title="Apple iPhone 11 Pro Max" price={1099.99} image={P3} rating={4} />
-                    <Product id={15} title="Apple iPhone 11 " price={699.99} image={P4} rating={3} />
-                    <Product id={16} title="Apple AirPod Pro" price={399.99} image={P5} rating={3} />
+                    <Product id={14} title="New Apple iPhone 11 Pro Max [128GB, space Gray] Unlocked" price={1099.99} image={P3} rating={4} />
+                    <Product id={15} title="New Apple iPhone 11 [128GB, purple] Unlocked" price={699.99} image={P4} rating={3} />
+                    <Product id={16} title="Apple AirPod Pro" price={197.99} image={P5} rating={3} />
                 </div>
 
                 <div className="home_row">
-                    <Product id={17} title="Apple Macbook Pro 16" price={1999.99} image={P1} rating={5} />
+                    <Product id={17} title="Apple Macbook Pro 16-in 2.4GHz 8-core i9 32GB 1TB 5500M 8GB Space Gray (CTO)" price={1999.99} image={P1} rating={5} />
                 </div>
             </div>
         </div>

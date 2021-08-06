@@ -21,28 +21,28 @@ function Login() {
         .catch(error => alert(error.message))
     }
 
-    const register = e => {
-        e.preventDefault();
+    // const register = e => {
+    //     e.preventDefault();
 
-        auth
-        .createUserWithEmailAndPassword(email, password)
-        .then((auth) => {
-            if (auth) {
-                history.push('/')
-            }
-        })
-        .catch(error => alert(error.message))
+    //     auth
+    //     .createUserWithEmailAndPassword(email, password)
+    //     .then((auth) => {
+    //         if (auth) {
+    //             history.push('/')
+    //         }
+    //     })
+    //     .catch(error => alert(error.message))
 
-    }
+    // }
 
     return (
         <div className="login">
             <Link to="/">
                 <img className="login_logo" src={Logo} alt="" />
-            </Link>
+            </Link> 
 
             <div className="login_container">
-                <h1>Sign-in</h1>
+                <h1 className="login_header">Sign In</h1>
 
                 <form>
                     <h5>E-mail</h5>
@@ -54,9 +54,15 @@ function Login() {
                     <button type="submit" onClick={signIn} className="login_signInButton">Sign In</button>
                 </form>
 
-                <p>By signing-in you agree to my Amazon's clone Condition of Use & Sale. Please see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice</p>
+                <p>By signing in you agree to my Amazon's clone Condition of Use & Sale. Please see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice</p>
 
-                <button onClick={register} className="login_registerButton">Create your Amazon Account</button>
+                    <p className="login_registerContainer"><strong>New to Amazon-Clone?</strong> 
+                    <Link to="/register" className="login_register">
+                        Sign Up Free
+                    </Link>
+                    </p>
+                
+                {/* <button onClick={register} className="login_registerButton">Create your Amazon Account</button> */}
             </div>
         </div>
     )

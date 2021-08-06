@@ -3,4 +3,9 @@
     background-color: #131921;
     color: white;
     display: flex;
+    align-items: center;
+}
+
+.footer_name{
+    text-align: center;
 }
