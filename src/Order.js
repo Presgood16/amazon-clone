@@ -7,7 +7,7 @@ import './Order.css'
 function Order({ order }) {
     return (
         <div className="order">
-            <h2>Order</h2>
+            <h2 className="order_order">Order</h2>
             <p>{moment.unix(order.data.created).format("MMMM Do YYYY, h:mma")}</p>
 
             <p className="order_id">
@@ -15,12 +15,12 @@ function Order({ order }) {
             </p>
 
             {order.data.basket?.map(item => (
-                <CheckoutProduct 
+                <CheckoutProduct className="order_checkout"
                     id={item.id}
                     title={item.title}
                     image={item.image}
-                    price={item.price}
                     rating={item.rating}
+                    price={item.price}
                     hideButton
                 />
             ))}

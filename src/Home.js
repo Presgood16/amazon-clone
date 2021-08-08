@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import Home_Image from './images/home_image.jpg';
+import Home_Image from './images/112.jpg';
 import Product from './Product';
 import P1 from './images/Macbook1.png';
 import P2 from './images/iWatch11.png';

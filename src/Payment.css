@@ -15,18 +15,22 @@
 }
 
 .payment_section{
-    display: flex;
+    display: block;
     padding: 20px;
     margin: 0 20px;
     border-bottom: 1px solid lightgray;
 }
 
+  .payment_noItems{
+    font-family: 'Gowun Batang', serif;
+}
+
 .payment_title{
-    flex: 0.2;
+    width: 100%;
 }
 
 .payment_address, .payment_items, .payment_details{
-    flex: 0.8;
+    width: 100%;
 }
 
 .payment_details  > form{
@@ -47,4 +51,45 @@
     margin-top: 10px;
     color: #111;
     border-color: #a88734 #9c7e31 #846a29;
+}
+
+.payment_details > form > div > button:hover{
+    background: #da9c00;
+}
+
+.payment_details > form > div >button:active{
+    box-shadow: 0 0.5px #666;
+    background-color: #da9c00;
+    transform: translateY(1px);
+}
+
+.payment_priceContainer{
+    display: grid;
+}
+
+
+/* @media (max-width: 880px) {
+
+	.payment .payment_title,
+	.payment .payment_address,
+	.payment .payment_items,
+    .payment .payment_details{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+} */
+
+@media(max-width: 880px) {
+    .payment_details > form > div > button{
+        height: 30px;
+    }
+
+    .payment_noItems{
+    font-size: large;
+    font-family: 'Gowun Batang', serif;
+    font-weight: bolder;
+}
 }

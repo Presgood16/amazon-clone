@@ -12,9 +12,21 @@
     min-width: 100px;
 }
 
+.product:hover{
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    color: rgb(73, 75, 94);
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
 .product_info{
     height: 100px;
     margin-bottom: 15px;
+}
+
+.product_title{
+    font-family: 'Gowun Batang', serif;
 }
 
 .product_price{
@@ -30,6 +42,7 @@
     width: 100%;
     object-fit: contain;
     margin-bottom: 15px;
+    margin-top: 50px;
 }
 
 .product > button{
@@ -39,5 +52,27 @@
     border-color: #a88734 #9c7e31 #846a29;
     color: #111;
     height: 30px;
+    padding: 5px 10px;
     border-radius: 5px;
+    font-family: 'Gowun Batang', serif;
+    font-weight: bolder;
+}
+
+.product > button:hover{
+    background: #da9c00;
+}
+
+.product >button:active{
+    box-shadow: 0 0.5px #666;
+    background-color: #da9c00;
+    transform: translateY(1px);
+}
+
+@media (max-width: 880px) {
+
+	.product{
+		width: auto;
+        border-radius: 10px;
+	}
+
 }

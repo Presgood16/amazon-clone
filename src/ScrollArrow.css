@@ -1,0 +1,28 @@
+.scrollTop{
+    cursor: pointer;
+    background-color: #37475A;
+    color: white;
+    border-radius: 10px;
+    z-index: 1000;
+    height: 40px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 1px;
+    display: flex;
+    animation: forwards 0.3s;
+    font-family: 'Gowun Batang', serif;
+}
+
+.scrollTop:hover{
+    opacity: 0.5;
+}
+
+@media (max-width: 880px) {
+
+	.scrollTop{
+		height: 30px;
+        font-size: small;
+	}
+}

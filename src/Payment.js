@@ -37,7 +37,7 @@ function Payment() {
     console.log('THE SECRET IS >>>', clientSecret);
     console.log('person: ',user);
 
-    const handleSubmit = async (event) => {
+    const    handleSubmit = async (event) => {
         event.preventDefault();
         setProcessing(true);
 
@@ -80,10 +80,10 @@ function Payment() {
         <div className="payment">
             <div className="payment_container">
 
-                <h1>Checkout (<Link to='/checkout'>{basket?.length} items</Link>)</h1>
+                <h1 className="payment_noItems">Checkout (<Link to='/checkout'>{basket?.length} items</Link>)</h1>
                 <div className="payment_section">
                     <div className="payment_title">
-                        <h3>Delivery Address</h3>
+                        <h3>Delivery Address: </h3>
                     </div>
                     <div className="payment_address">
                         <p>{user?.email}</p>
@@ -95,7 +95,7 @@ function Payment() {
 
                 <div className="payment_section">
                     <div className="payment_title">
-                        <h3>Review items and delivery</h3>
+                        <h3>Review items and delivery: </h3>
                     </div>
                     <div className="payment_items">
                         {basket.map(item => (
@@ -130,7 +130,7 @@ function Payment() {
                                     prefix={"$"}
                                 />
 
-                                <button disabled={processing || disabled || succeeded}>
+                                <button disabled={processing || disabled || succeeded} className="payment_button">
                                     <span>{processing ? <p>Processing</p> : "Pay Now"}</span>
                                 </button>
                             </div>

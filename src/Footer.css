@@ -1,11 +1,146 @@
-.footer{
-    height: 150px;
-    background-color: #131921;
-    color: white;
-    display: flex;
-    align-items: center;
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+*{
+	padding:0;
+	margin:0;
+}
+footer{
+    position: fixed;
+    bottom: 0;
 }
 
-.footer_name{
-    text-align: center;
+@media (max-height:800px){
+	footer { position: static; }
+}
+
+.footer{
+	background-color: #37475A;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+}
+
+.footer .footer_left,
+.footer .footer_center,
+.footer .footer_right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footr left */
+.footer .footer_left{
+	width: 30%;
+}
+
+.footer h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer .footer_left img{
+	width: 30%;
+}
+
+/* Footer Links */
+
+.footer .footer_links{
+	color:  #ffffff;
+	margin: 20px  12px;
+}
+
+.footer .footer_links a{
+	display: flex;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  white;
+	font-family: 'Gowun Batang', serif;
+}
+
+.footer .footer_links :hover{
+    color: #e0ac1c;
+}
+
+.footer .footer_company_name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+	font-family: 'Gowun Batang', serif;
+}
+
+/* Footer Center */
+
+.footer .footer_center{
+	width: 35%;
+}
+
+.footer .footer_center > h3{
+    margin: 0 15px 0 0;
+}
+
+.footer .footer_center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin: 10px 25px 0 0;
+    font-family: 'Gowun Batang', serif;
+    font-weight: 500;
+}
+
+
+/* Footer Right */
+
+.footer .footer_right{
+	width: 30%;
+}
+
+.footer .footer_company_about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 10px 0 0px 30px;
+}
+
+.footer .footer_company_about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer .footer_icons{
+	margin-top: 25px;
+    margin-left: 30px;
+}
+
+.footer .footer_icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 40px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+@media (max-width: 880px) {
+
+	.footer .footer_left,
+	.footer .footer_center,
+	.footer .footer_right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
 }

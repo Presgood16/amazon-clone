@@ -1,7 +1,7 @@
 import React from 'react';
 import './Checkout.css';
 import CheckoutProduct from './CheckoutProduct';
-import AD from './images/ad.jpg'
+import AD from './images/adds.gif'
 import { useStateValue } from './StateProvider';
 import Subtotal from './Subtotal';
 
@@ -14,7 +14,7 @@ function Checkout() {
             <div className="checkout_left">
                 <img className="checkout_ad" src={AD} alt=""/>
 
-                <div>
+                <div className="checkout_container">
                     <h3>Hello, {user?.email}</h3>
                     <h2 className="checkout_title">Shopping Cart</h2>
 

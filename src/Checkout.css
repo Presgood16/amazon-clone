@@ -1,8 +1,10 @@
 .checkout{
-    display: flex;
     padding: 20px;
-    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
     height: max-content;
+    justify-content: space-between;
 }
 
 .checkout_ad{
@@ -14,4 +16,46 @@
     margin-right: 10px;
     padding: 10px;
     border-bottom: 1px solid lightgray;
+    font-family: 'Gowun Batang', serif;
+}
+
+h3{
+    font-family: 'Gowun Batang', serif;
+}
+
+.checkout .checkout_left{
+    width: 70%;
+}
+
+.checkout_right{
+    width: 30%;
+} 
+
+.checkout .checkout_left,
+.checkout .checkout_right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+@media (max-width: 880px) {
+
+	.checkout .checkout_left,
+	.checkout .checkout_right{
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+    h3{
+        font-size: small;
+    }
+
+    .checkout_title{
+        font-size: medium;
+    }
+
+}
+
+@media (max-height:800px){
+	.checkout { position: static; }
 }

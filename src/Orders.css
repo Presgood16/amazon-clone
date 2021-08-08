@@ -4,4 +4,19 @@
 
 .orders > h1{
     margin: 30px 0;
+    font-family: 'Gowun Batang', serif;
+}
+
+@media (max-width: 880px) {
+
+	.orders{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+        padding: 20px 0;
+	}
+
+    .orders > h1{
+        text-align: center;
+    }
 }

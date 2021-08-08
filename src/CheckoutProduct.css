@@ -30,5 +30,45 @@
     border-color: #a88734 #9c7e31 #846a29;
     color: #111;
     border-radius: 3px;
-    height: 25px;
+    height: 30px;
+    padding: 5px;
+}
+
+.checkoutProduct_info > button:hover{
+    background: #da9c00;
+}
+
+.checkoutProduct_info > button:active{
+    box-shadow: 0 0.5px #666;
+    background-color: #da9c00;
+    transform: translateY(1px);
+}
+
+@media (max-width: 880px) {
+
+	.checkoutProduct_info > button{
+        height: 30px;
+        font-size: small;
+        font-weight: 400;
+	}
+
+    .checkoutProduct_remove > button{
+        height: 30px;
+    }
+
+    .checkoutProduct_image{
+    object-fit: contain;
+    height: 150px;
+    width: 150px;
+    }
+
+    .checkoutProduct_title{
+    font-size: 14px;
+    font-weight: 800;
+    }
+
+    .checkoutProduct_price{
+        font-size: 14px;
+    }
+
 }

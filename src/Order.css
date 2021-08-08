@@ -1,18 +1,50 @@
 .order{
     padding: 40px;
     margin: 20px 0;
-    border: 1px sold lightgray;
+    border: 1px solid lightgray;
     background-color: white;
     position: relative;
+    display: block;
+    border-radius: 10px;
 }
 
 .order_id{
     position: absolute;
     top: 40px;
     right: 20px;
+    font-family: 'Gowun Batang', serif;
+}
+
+.order_order{
+    font-family: 'Gowun Batang', serif;
 }
 
 .order_total{
     font-weight: 500;
     text-align: right;
+    font-family: 'Gowun Batang', serif;
+}
+
+@media (max-width: 880px) {
+
+	.order .order_order{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+    .order{
+    padding: 40px;
+    margin: 20px 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    position: relative;
+    display: block;
+    border-radius: 10px;
+    }
+
+    .order_total{
+    font-weight: 500;
+    text-align: center;
+}
 }
