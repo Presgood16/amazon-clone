@@ -16,7 +16,7 @@ import Orders from './Orders';
 import Footer2 from './Footer2';
 import ScrollArrow from './ScrollArrow';
 
-const promise = loadStripe('pk_test_51JLGU8CyjB9mcfPY5mALfHRBEkFop8bjFOpscZwRGuD8OPG5PFCt53WcV3tToy7fqKaB9UhOKzzSJt8iMUSQVXma00nTXbsAC5');
+const promise = loadStripe('');
 
 function App() {
 
